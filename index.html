@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head lang="en">
+    <title>Pinying's first beautiful webpage</title>
+</head>
+<body>
+    <h1>Pinying's first beautiful webpage</h1>
+    <p>Welcome to this awesome webpage, please let us know you first.</p>
+    <div id="user">
+        <form>
+            <input type="text" placeholder="Full name" name="Name">
+            <input type="password" placeholder="Password" name="Password">
+            <fieldset>
+                <legend>Select your mood</legend>
+            
+                <div>
+                  <input type="radio" id="happy" name="mood" value="Happy"
+                         checked>
+                  <label for="happy">Happy</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="sad" name="mood" value="sad">
+                  <label for="sad">Sad</label>
+                </div>
+            </fieldset> 
+            <fieldset>
+                <legend>Select your country</legend>
+                <input name="country" list="countries">
+                <datalist id="countries">
+                    <option value = "GR">GR</option>
+                    <option value = "FR">FR</option>
+                    <option value = "CN">CN</option>
+                </datalist>
+            </fieldset>   
+            <input type="submit" value="Submit"> 
+        </form>
+        <p>You have some recipes recommended: <a href="#recipe">recipe</a></p>
+
+    </div>
+    <div id="table">
+        <h2>An user table which will connect to the most powerful DB in the future</h2>
+        <table>
+        <tr>
+            <th>User</th>
+            <th>Food</th>
+            <th>Country</th>
+            <th>Mood</th>
+        </tr>
+        <tr>
+            <td>Pinying</td>
+            <td>Noodles</td>
+            <td>CN</td>
+            <td>Happy</td>
+        </tr>
+        <tr>
+            <td>Lida</td>
+            <td>Crepe</td>
+            <td>FR</td>
+            <td>Happy</td>
+        </tr>
+        </table>
+    </div>
+
+    <div id="recipe">
+        <h2>Recipe that match your mood now</h2>
+        <h3>Crepe recipe</h2>
+        Things we need to prepare:
+        <ul>
+            <li>125g flour</li>
+            <li>250ml milk</li>
+            <li>25g melted butter</li>
+            <li>1 egg</li>
+            <li>A pinch of salt and vanilla</li>
+        </ul>
+        Then follow these steps:
+        <ol>
+            <li>Mix everything with strong arms</li>
+            <li>Put them in pan and flip them when there is some bubbles</li>
+        </ol>
+        <p>The result should be sth like this:</p>
+        <img src="https://www.aheadofthyme.com/wp-content/uploads/2020/01/nutella-crepes.jpg" alt="Yummy crepe" width= 500/>
+        <p>Or check the video</p>
+        <p>Or click <a href="https://www.marmiton.org/recettes/recette_pate-a-crepes_12372.aspx">here</a> to check for more details.</p>
+    </div>
+
+</body>
